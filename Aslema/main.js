@@ -1,0 +1,31 @@
+function makeItalic() {
+    if (document.getElementById("myText").style.fontStyle =="normal")
+        document.getElementById("myText").style.fontStyle ="italic";
+
+else {  
+    document.getElementById("myText").style.fontStyle = "normal";
+}
+}
+function makeBold() {
+    if (document.getElementById("myText").style.fontWeight =="normal")
+        document.getElementById("myText").style.fontWeight ="Bold";
+
+else {  
+    document.getElementById("myText").style.fontWeight = "normal";
+}
+}
+function makeUnderline() {
+    if (document.getElementById("myText").style.textDecoration =="none")
+        document.getElementById("myText").style.textDecoration ="underline";
+
+else {  
+    document.getElementById("myText").style.textDecoration ="none";
+}
+}
+function changeSize() {
+    var x=document.getElementById("size").value;
+       document.getElementById("myText").style.fontSize=document.getElementById("size").value;
+}
+function changePolice() {
+   document.getElementById("myText").style.fontFamily=document.getElementById("police").value;
+}
